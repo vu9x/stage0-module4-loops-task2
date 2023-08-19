@@ -5,9 +5,12 @@ public class Multiplication {
         int counter = 0;
         int positive = multiplyByAndToInclusive >=0 ? multiplyByAndToInclusive: multiplyByAndToInclusive * (-1);
 
-        while (counter < positive + 1) {
-            System.out.println(counter * multiplyByAndToInclusive);
-            counter++;
+        if (multiplyByAndToInclusive != 0) {
+            while (counter <= positive) {
+                System.out.println(counter * multiplyByAndToInclusive);
+                counter++;
+            }
         }
+
     }
 }
